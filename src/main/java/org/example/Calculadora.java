@@ -6,10 +6,10 @@ public class Calculadora {
         return numero + numero2;
     }
 
-    public float dividir(float dividiendo, float divisor){
+    public float dividir(float dividendo, float divisor){
         if (divisor == 0){
-            return 0;
+            throw new ArithmeticException();
         }
-        return dividiendo / divisor;
+        return dividendo / divisor;
     }
 }
